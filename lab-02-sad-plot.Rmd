@@ -121,7 +121,8 @@ Next team member should pull to download updates and continue from here.
 
 ### Exercise 7
 
-*Remove this text and add your answer here. No code needed for this exercise!*
+Plotting only the increase in number of faculty members between 1975 and 2011 , would show that part-time faculty is the only faculty type that has increased.
+By removing the colour from all other faculty types it would put the readers focus on part-time only.
 
 
 ### Exercise 8
@@ -129,7 +130,12 @@ Next team member should pull to download updates and continue from here.
 *Remove this text and add your answer here.*
 
 ```{r lineplot-4}
-# remove this comment and add your code here
+staff_long %>%
+  ggplot(aes(x = year, y = values, color = faculty_type, group = faculty_type)) +
+  geom_line() +
+  labs(x = "Year", y = "Number of Faculty", title = "Faculty type trends from 1975 to 2011", color = "Faculty Type", caption = "American Association of University Professors (AAUP) data 
+  showing trends in instructional staff employees between 
+       1975 and 2011")
 ```
 
 
