@@ -67,17 +67,28 @@ Team member 3 should pull to download updates and begins here.
 *Remove this text and add your answer here.*
 
 ```{r lineplot-1}
-# remove this comment and add your code here
+staff_long %>%
+  ggplot(aes(x = year, y = values, color = faculty_type)) +
+  geom_line()
+
 ```
 
+The issue is that there are no lines on the graph because there the data is not grouped
 
 ### Exercise 5
 
 *Remove this text and add your answer here.*
 
 ```{r lineplot-2}
-# remove this comment and add your code here
+staff_long %>%
+  ggplot(aes(x = year, y = values, color = faculty_type, group = faculty_type)) +
+  geom_line()
 ```
+
+Part-time faculty has increased greatly over time
+Full-time tenured has decreased over time
+Full-time tenure track has also decreased
+Graduate Student and Full-time non tenure have remained relatively constant
 
 
 Team member 3 should knit, stage & commit, and push all changes to GitHub.
