@@ -106,7 +106,9 @@ Next team member should pull to download updates and continue from here.
 staff_long %>%
   ggplot(aes(x = year, y = values, color = faculty_type, group = faculty_type)) +
   geom_line() +
-  labs(x = "Year", y = "Number of Faculty", title = "Faculty type trends from 1975 to 2011", color = "Faculty Type", caption = "American Association of University Professors (AAUP) data showing trends in instructional staff employees between 1975 and 2011")
+  labs(x = "Year", y = "Number of Faculty", title = "Faculty type trends from 1975 to 2011", color = "Faculty Type", caption = "American Association of University Professors (AAUP) data 
+  showing trends in instructional staff employees between 
+       1975 and 2011")
 ```
 
 
