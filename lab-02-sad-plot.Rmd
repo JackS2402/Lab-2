@@ -13,6 +13,7 @@ library(tidyverse)
 
 ```{r load-data, message = FALSE}
 staff <- read_csv("data/instructional-staff.csv")
+view(staff)
 ```
 
 
