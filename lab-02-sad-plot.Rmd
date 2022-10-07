@@ -51,7 +51,7 @@ staff_long <- staff %>%
 *Remove this text and add your answer here.*
 
 ```{r staff-long-inspect}
-Yes, correct
+#Yes, correct
 ```
 
 
